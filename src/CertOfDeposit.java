@@ -12,6 +12,7 @@ import java.util.Locale;
  * - Getters and setters
  * - Constructor
  * - Constructor overloading
+ * - Polymorphism
  */
 public class CertOfDeposit {
     private final DateTimeFormatter dateTimeUsFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(Locale.US);
