@@ -1,5 +1,6 @@
 import java.math.BigDecimal;
 import java.security.SecureRandom;
+import java.text.NumberFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
@@ -13,7 +14,8 @@ import java.util.Locale;
  * - Constructor overloading
  */
 public class CertOfDeposit {
-    private final DateTimeFormatter usFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(Locale.US);
+    private final DateTimeFormatter dateTimeUsFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL).withLocale(Locale.US);
+    private final NumberFormat usCurrencyFormatter = NumberFormat.getCurrencyInstance(Locale.US);
 
     private int certificateNumber;
     private String lastName;
@@ -68,9 +70,9 @@ public class CertOfDeposit {
         System.out.println("==================== RESULT ====================");
         System.out.printf("Certificate number: %d\n", getCertificateNumber());
         System.out.printf("Last name: %s\n", getLastName());
-        System.out.printf("Balance: %.2f\n", getBalance());
-        System.out.printf("Issue date: %s\n", getIssueDate().format(usFormatter));
-        System.out.printf("Maturity date: %s\n", getMaturityDate().format(usFormatter));
+        System.out.printf("Balance: %s\n", usCurrencyFormatter.format(getBalance()));
+        System.out.printf("Issue date: %s\n", getIssueDate().format(dateTimeUsFormatter));
+        System.out.printf("Maturity date: %s\n", getMaturityDate().format(dateTimeUsFormatter));
 
         return super.toString();
     }
