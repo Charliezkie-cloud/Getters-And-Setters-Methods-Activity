@@ -6,4 +6,4 @@ Create a java program for the following problems. Submit the screenshots of your
 
 2. Create an interactive application that prompts the user for data for two CertOfDeposit objects. Prompt the user for certificate number, name, balance, and issue date for each CertOfDeposit, and then instantiate the objects. Display all the values, including the maturity dates. Save the application as ``TestCertOfDeposit.java``.
 
-<img width="601" height="332" alt="Screenshot 2026-03-26 160404" src="https://github.com/user-attachments/assets/2be7f840-98b0-46ea-b942-f62812c46367" />
+<img width="595" height="319" alt="Screenshot 2026-03-26 161134" src="https://github.com/user-attachments/assets/15144d81-fee4-43c6-82af-72c1a8af61ef" />
