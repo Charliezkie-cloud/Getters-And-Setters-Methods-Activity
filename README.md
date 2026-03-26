@@ -1,5 +1,7 @@
 # Getters and Setters Methods Activity
 
+> ⚠️ This activity includes concepts and features not yet covered by our professor, so it is strongly recommended to study them before submission. ⚠️
+
 Create a java program for the following problems. Submit the screenshots of your source codes and outputs.
 
 1. Create a CertOfDeposit class. The class contains data fields that hold a certificate number, account holder’s last name, balance, issue date, and maturity date, using LocalDate objects for each date. Provide get and set methods for each field. Also provide a constructor that requires parameters used to set the first four fields, and sets the maturity date to exactly one year after the issue date. Save the class as ``CertOfDeposit.java``.
